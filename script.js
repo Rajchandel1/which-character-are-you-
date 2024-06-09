@@ -91,6 +91,7 @@ image.addEventListener("load", function(){
     var inputValue = input.value; 
     textPart.innerHTML = `<h1>${text}</h1>`
     span.innerHTML = `<h1>${inputValue} is ${text}</h1>`
+    span.style.display = "block";
 })
 
 var flag = 0;
@@ -124,7 +125,7 @@ genrate.addEventListener("click", function(){
     console.log(randomIMG);
 
     image.src = randomIMG
-      span.style.display = "block";
+      
             insert.style.display = "none";
             share.style.display = "block";
         }
@@ -143,7 +144,7 @@ genrate.addEventListener("click", function(){
     image.src = randomIMG
     // textPart.innerHTML = `<h1>${text}</h1>`
     // span.innerHTML = `<h1>${inputValue} is ${text}</h1>`
-    span.style.display = "block";
+   
     insert.style.display = "none";
     share.style.display = "block";
        } 

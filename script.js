@@ -91,8 +91,11 @@ image.addEventListener("load", function(){
     var inputValue = input.value; 
     textPart.innerHTML = `<h1>${text}</h1>`
     span.innerHTML = `<h1>${inputValue} is ${text}</h1>`
-    span.style.display = "block";
-})
+    })
+
+    textPart.addEventListener("load", function(){
+        span.style.display = "block";
+    })
 
 var flag = 0;
 console.log(flag);
